@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>FORMS</h1>
+    <form action="POST" name="contact" id="contact" method="POST">
+      <label for="name">Username</label>
+      <input
+        type="text"
+        name="first-name"
+        id="first-name"
+        placeholder="Your first name"
+        maxlength="20"
+        required
+      />
+      <input
+        type="text"
+        name="last-name"
+        id="last-name"
+        placeholder="Your last name"
+        maxlength="20"
+        minlength="10"
+        required
+      />
+      <label for="password">UserPassword</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="pass123"
+      />
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Description"
+      ></textarea>
+      <br />
+      <label for="country">Choose country</label>
+      <select name="country" id="country">
+        <option value="mexcio">Mexico</option>
+        <option value="usa">USA</option>
+        <option value="rest-of-the-world">Rest of the world</option>
+      </select>
+      <br />
+      <label for="language">Choose language</label>
+      <input type="radio" name="language" id="en" value="en" /><label for="en"
+        >En</label
+      >
+      <input type="radio" name="language" id="es" value="es" /><label for="es"
+        >Es</label
+      >
+      <br />
+      <label for="favorite-technology">Choose your favorite technology</label>
+      <label for="favorite-technology">javascript</label>
+      <input
+        type="checkbox"
+        name="favorite-technology"
+        id="javascript"
+        value="javascript"
+      />
+      <label for="favorite-technology">python</label>
+      <input
+        type="checkbox"
+        name="favorite-technology"
+        id="python"
+        value="python"
+      />
+      <label for="favorite-technology">C++</label>
+      <input type="checkbox" name="favorite-technology" id="C++" value="C++" />
+      <label for="favorite-technology">Rust</label>
+      <input
+        type="checkbox"
+        name="favorite-technology"
+        id="Rust"
+        value="Rust"
+      />
+      <br />
+      <input type="submit" value="Send info" />
+    </form>
+    <h2>Inputs FORM</h2>
+    <form action="">
+      <!-- Inputs -->
+      <label for="email">Your email</label>
+      <input
+        type="email"
+        name="user-email"
+        id="user-email"
+        placeholder="mail@yopmail.com"
+      />
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+      <label for="number">Write a number</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="3"
+        max="10"
+        placeholder="1"
+      />
+      <label for="load-file">Load a file</label>
+      <input
+        type="file"
+        name="load-file"
+        id="load-file"
+        accept=".jpg"
+        multiple
+      />
+      <label for="number-range">Select a range of numbers</label>
+      <input
+        type="range"
+        name="number-range"
+        id="number-range"
+        max="70"
+        value="60"
+      />
+      <label for="color">Choose a color</label>
+      <input type="color" name="color" id="color" />
+      <br />
+      <label for="birth-date">Introduce your birth date</label>
+      <input
+        type="date"
+        name="birth-date"
+        id="birth-date"
+        value="1994-06-01"
+        min="1994-06-01"
+        max="1994-06-08"
+      />
+      <label for="local-time">Local time</label>
+      <input type="datetime-local" name="local-time" id="local-time" />
+      <label for="time">Time</label>
+      <input type="time" name="time" id="time" />
+      <br />
+      <input type="hidden" name="hidden-value" id="hidden-value" />
+      <label for="display-image">Display</label>
+      <input
+        type="image"
+        src="https://images.pexels.com/photos/34513508/pexels-photo-34513508.jpeg"
+        alt="Lake landscape"
+        width="300px"
+      />
+      <br />
+      <input type="submit" value="Send info" />
+      <br />
+      <input type="reset" value="Reset form" />
+    </form>
+  </body>
+</html>
