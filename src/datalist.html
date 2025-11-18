@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      user-scalable="no"
+    />
+    <meta name="keywords" content="website, something" />
+    <meta name="description" content="This is a datalist example" />
+    <meta name="author" content="AXQ" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Meta tags -->
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Very Sweet Website - AXQ" />
+    <meta
+      name="description"
+      content="This is a very neat description, not long but strong enough."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Very Sweet Website - AXQ" />
+    <meta
+      property="og:description"
+      content="This is a very neat description, not long but strong enough."
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Very Sweet Website - AXQ" />
+    <meta
+      property="twitter:description"
+      content="This is a very neat description, not long but strong enough."
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      form {
+        width: 600px;
+        background-color: black;
+        border-radius: 24px;
+        padding: 100px;
+      }
+      label {
+        background-color: yellow;
+        color: black;
+      }
+      [data-main-name="Axel"] {
+        color: red;
+        background-color: blue;
+      }
+    </style>
+    <title>Datalist</title>
+  </head>
+  <body>
+    <h1>Datalist</h1>
+    <form action="POST">
+      <details>
+        <summary>What is a datalist?</summary>
+        <p>
+          A datalist is a list of options that can be used in an input element.
+          It is similar to a select element, but it allows the user to type in
+          their own value as well as choose from the list of options.
+        </p>
+      </details>
+      <label for="username" data-main-name="Axel">Username</label>
+      <input type="text" name="username" id="username" list="name-options" />
+      <datalist id="name-options">
+        <option value="Axel"></option>
+        <option value="John"></option>
+        <option value="Maria"></option>
+        <option value="Sofia"></option>
+        <option value="Alex"></option>
+        <option value="Alex"></option>
+        <option value="Alex"></option>
+      </datalist>
+      <br />
+      <label for="progress">This is the progress</label>
+      <progress id="progress"></progress>
+      <br />
+      <label for="new-progress">This is the progress</label>
+      <progress id="new-progress" value="40" max="100"></progress>
+    </form>
+    <audio controls>
+      <source src="./audio.mp3" type="audio/mpeg" />
+    </audio>
+    <video
+      src="https://www.pexels.com/download/video/33897593/"
+      controls
+      width="300px"
+      poster¡="https://images.pexels.com/photos/32634917/pexels-photo-32634917.jpeg"
+    ></video>
+    <img
+      src="./img/cloud-rain-svgrepo-com.svg"
+      alt="A rain cloud icon"
+      width="100px"
+    />
+  </body>
+</html>
