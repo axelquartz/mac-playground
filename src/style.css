@@ -14,7 +14,11 @@
 }
 
 .nav-el {
+<<<<<<< HEAD
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+=======
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> 1a23fa0 (Advanced selectors)
   font-weight: 600;
   font-size: 1.1rem;
   background-color: black;
@@ -22,8 +26,15 @@
   padding: 0.5rem 1rem;
 }
 
+<<<<<<< HEAD
 h1, h2, p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+=======
+h1,
+h2,
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+>>>>>>> 1a23fa0 (Advanced selectors)
 }
 
 #main-section {
@@ -34,8 +45,26 @@ h1, h2, p {
   margin-bottom: 2rem;
   margin: 3rem 0;
   width: 80%;
+<<<<<<< HEAD
 }
 
 section p a {
   background-color: yellow;
+=======
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nested > h2 {
+  color: black;
+  padding: 2rem;
+  background-color: yellow;
+  border-radius: 24px;
+>>>>>>> 1a23fa0 (Advanced selectors)
+}
+
+h3 ~ p {
+  color: darkgreen;
+  background-color: lightgreen;
+  font-size: 1.2rem;
 }
