@@ -13,58 +13,90 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.nav-el {
-<<<<<<< HEAD
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-=======
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> 1a23fa0 (Advanced selectors)
-  font-weight: 600;
-  font-size: 1.1rem;
-  background-color: black;
-  color: white;
+/* Example of no nested CSS */
+/* .contenedor .articulo {
+  background-color: #191919;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  width: 400px;
+}
+
+.contenedor .articulo h2 {
+  margin-top: 0;
+  color: #e4ff79;
+}
+
+.contenedor .articulo p {
+  color: #d1d1d1;
+}
+
+.contenedor .articulo a {
+  color: #1f1f1f;
+  background-color: #e4ff79;
   padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
 }
 
-<<<<<<< HEAD
-h1, h2, p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-=======
-h1,
-h2,
-p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
->>>>>>> 1a23fa0 (Advanced selectors)
+.contenedor .articulo.destacado {
+  color: #1f1f1f;
+  background-color: #e4ff79;
+}
+.contenedor .articulo.destacado h2 {
+  color: #242424;
+}
+.contenedor .articulo.destacado a {
+  color: #e4ff79;
+  background-color: #242424;
+}
+.contenedor .articulo.destacado p {
+  color: #333333;
+} */
+
+/* Example of nested CSS */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
 }
 
-#main-section {
-  background-color: black;
-  color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-  margin: 3rem 0;
-  width: 80%;
-<<<<<<< HEAD
-}
-
-section p a {
-  background-color: yellow;
-=======
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nested > h2 {
-  color: black;
-  padding: 2rem;
-  background-color: yellow;
-  border-radius: 24px;
->>>>>>> 1a23fa0 (Advanced selectors)
-}
-
-h3 ~ p {
-  color: darkgreen;
-  background-color: lightgreen;
-  font-size: 1.2rem;
+.contenedor {
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  .articulo {
+    background-color: darkblue;
+    width: 400px;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-family: "Plus Jakarta Sans", system-ui, Avenir, Helvetica, Arial;
+    font-weight: 600;
+    p {
+      color: lightblue;
+    }
+    h2 {
+      margin-top: 0;
+      color: lightblue;
+    }
+    &.destacado {
+      background-color: lightblue;
+      color: darkblue;
+      a {
+        color: darkblue;
+        background-color: lightblue;
+      }
+      h2 {
+        color: darkblue;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+      p {
+        color: navy;
+        text-align: left;
+        line-height: 1.4;
+      }
+    }
+  }
 }
