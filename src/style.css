@@ -100,3 +100,13 @@
     }
   }
 }
+
+/* Example of box model */
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 5px solid lightgray;
+  margin: 15px;
+  background-color: #333333;
+}
