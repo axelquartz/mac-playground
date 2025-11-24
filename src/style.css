@@ -13,48 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Example of no nested CSS */
-/* .contenedor .articulo {
-  background-color: #191919;
-  padding: 2rem 1rem;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-  width: 400px;
+body {
+  /* background-color: #000203;
+  opacity: 1;
+  background-image: radial-gradient(
+    #182b36 0.9500000000000001px,
+    #000203 0.9500000000000001px
+  );
+  background-size: 19px 19px; */
+  background: linear-gradient(to right, #18242d, #0a1116);
 }
-
-.contenedor .articulo h2 {
-  margin-top: 0;
-  color: #e4ff79;
-}
-
-.contenedor .articulo p {
-  color: #d1d1d1;
-}
-
-.contenedor .articulo a {
-  color: #1f1f1f;
-  background-color: #e4ff79;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  text-decoration: none;
-}
-
-.contenedor .articulo.destacado {
-  color: #1f1f1f;
-  background-color: #e4ff79;
-}
-.contenedor .articulo.destacado h2 {
-  color: #242424;
-}
-.contenedor .articulo.destacado a {
-  color: #e4ff79;
-  background-color: #242424;
-}
-.contenedor .articulo.destacado p {
-  color: #333333;
-} */
-
-/* Example of nested CSS */
 
 @font-face {
   font-family: "Plus Jakarta Sans";
@@ -66,7 +34,7 @@
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   .articulo {
-    background-color: darkblue;
+    background-color: #1a2f41;
     width: 400px;
     padding: 2rem 1rem;
     margin-bottom: 1rem;
