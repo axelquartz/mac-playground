@@ -21,7 +21,8 @@ body {
     #000203 0.9500000000000001px
   );
   background-size: 19px 19px; */
-  background: linear-gradient(to right, #18242d, #0a1116);
+  /* background: linear-gradient(90deg, #36566f, #0a1116); */
+  background: radial-gradient(#1a2f41, #242424);
 }
 
 @font-face {
