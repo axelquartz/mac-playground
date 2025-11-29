@@ -22,7 +22,14 @@ body {
   );
   background-size: 19px 19px; */
   /* background: linear-gradient(90deg, #36566f, #0a1116); */
-  background: radial-gradient(#1a2f41, #242424);
+  /* background: radial-gradient(#1a2f41, #242424); */
+  /* background: conic-gradient(from 180deg at 50% 50%, #1a2f41, #ffb7b7, #accce8); */
+  background: linear-gradient(
+      to right,
+      rgba(26, 247, 65, 1),
+      rgba(36, 156, 36, 0)
+    ),
+    url("./img/image-1.png");
 }
 
 @font-face {
