@@ -127,3 +127,13 @@ input {
     font-style: italic;
   }
 }
+
+.exclusive-link {
+  &:hover {
+    color: red;
+    font-weight: bold;
+  }
+}
+.articulo:first-child {
+  background-color: orange;
+}
