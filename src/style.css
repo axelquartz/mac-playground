@@ -76,19 +76,6 @@ span {
   color: lightgreen;
 }
 
-p {
-  &::first-line {
-    background-color: yellow;
-  }
-  &::first-letter {
-    background-color: blue;
-  }
-  &::selection {
-    background-color: orange;
-    color: black;
-  }
-}
-
 /* Example of box model */
 .box {
   width: 200px;
@@ -136,4 +123,43 @@ input {
 }
 .articulo:first-child {
   background-color: orange;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+}
+
+.cta a {
+  background-color: yellow;
+  color: black;
+  padding: 4px 12px;
+  margin: 8px 24px;
+  &:first-child {
+    &:hover {
+      background-color: orange;
+      color: white;
+    }
+    &:active {
+      background-color: red;
+      color: white;
+    }
+    /* &:visited {
+      background-color: green;
+      color: white;
+    } */
+  }
+  &:hover {
+    background-color: aqua;
+    color: darkblue;
+  }
+}
+.articles p {
+  background-color: yellow;
+  &:nth-child(4) {
+    background-color: orange;
+  }
+  &:nth-last-child(1) {
+    background-color: lightgreen;
+  }
 }
