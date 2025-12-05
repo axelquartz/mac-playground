@@ -11,6 +11,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #f426ff;
+  --secondary-color: #21d4fd;
+
+  --primary-font: "Plus Jakarta Sans", system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+
+  --primary-border-radius: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -26,7 +40,7 @@ body {
 }
 
 @font-face {
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--primary-font);
   src: url("./fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
 }
 
@@ -61,39 +75,20 @@ body {
         text-decoration: underline;
         text-transform: uppercase;
       }
-      p {
-        color: navy;
-        text-align: left;
-        line-height: 1.4;
-      }
     }
   }
+}
+p {
+  color: navy;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 1rem;
 }
 
 span {
   font-size: 1.2rem;
   font-weight: 500;
   color: lightgreen;
-}
-
-/* Example of box model */
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: yellow;
-}
-
-.box::before {
-  content: "Before";
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bold;
-  background-color: black;
-}
-.box::after {
-  content: "After";
-  background-color: white;
-  display: block;
-  color: black;
 }
 
 .list {
@@ -135,6 +130,7 @@ input {
   color: black;
   padding: 4px 12px;
   margin: 8px 24px;
+  border-radius: var(--primary-border-radius);
   &:first-child {
     &:hover {
       background-color: orange;
@@ -156,10 +152,16 @@ input {
 }
 .articles p {
   background-color: yellow;
-  &:nth-child(4) {
-    background-color: orange;
+  &:nth-last-child(4) {
+    background-color: var(--primary-color);
   }
   &:nth-last-child(1) {
     background-color: lightgreen;
   }
+}
+
+.box {
+  background-color: yellow;
+  width: 40vw;
+  height: 20vh;
 }
