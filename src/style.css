@@ -162,6 +162,16 @@ input {
 
 .box {
   background-color: yellow;
-  width: 40vw;
-  height: 20vh;
+  width: 400px;
+  height: 600px;
+  margin: 2rem;
+  display: inline-block;
+  vertical-align: top;
+  &:nth-child(2) {
+    height: 300px;
+  }
+}
+
+.hide {
+  display: none;
 }
